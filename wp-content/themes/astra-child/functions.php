@@ -23,3 +23,18 @@ function child_enqueue_styles() {
 }
 
 add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 15 );
+
+add_action('wp_footer', 'ocultarIconeAoRolar');
+
+function ocultarIconeAoRolar() {
+    echo '<script>
+        window.addEventListener("scroll", function() {
+            var icon = document.querySelector(".custom-logo");
+            if (window.scrollY > 100) {
+                icon.style.display = "none";
+            } else {
+                icon.style.display = "block";
+            }
+        });
+    </script>';
+}
