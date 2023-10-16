@@ -38,3 +38,29 @@ function ocultarIconeAoRolar() {
         });
     </script>';
 }
+
+
+/*
+
+add_action('wp_footer', 'mostrarIconeAoRolar');
+
+function mostrarIconeAoRolar() {
+    echo '<script>
+window.addEventListener("scroll", function() {
+    var icon = document.querySelector(".uagb-ifb-image-content");
+    if (window.scrollY > 100) {
+        icon.style.display = "block";
+    } else {
+        icon.style.display = "none";
+    }
+});
+
+// Oculta o ícone no início
+document.addEventListener("DOMContentLoaded", function() {
+    var icon = document.querySelector(".uagb-ifb-image-content");
+    icon.style.display = "none";
+});
+    </script>';
+}*/
+
+
